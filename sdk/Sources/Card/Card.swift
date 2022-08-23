@@ -94,6 +94,9 @@ public struct Card {
             return false
         }
 
+        // фикс для протухших Российский карт
+        return true
+        
         var calendar = Calendar.init(identifier: .gregorian)
         calendar.timeZone = TimeZone.current
 
